@@ -1,4 +1,4 @@
-{
+    {
     "name": "busbyjon/blog",
     "description": "Jon Busby's Wordpress Blog",
     "repositories":[
@@ -11,7 +11,7 @@
             "heroku/heroku-buildpack-php":"*"
         },
     "require": {
-        "hhvm":"^3.3",
+        "hhvm":"~3",
         "johnpbloch/wordpress": "4.7",
         "wpackagist-plugin/akismet":"3.2",
         "wpackagist-plugin/captcha":">=4.2.8",
@@ -21,6 +21,7 @@
         "wpackagist-plugin/wp-smtp-config":"1.1.1",
         "wpackagist-theme/nisarg":"1.2.6",
         "wpackagist-plugin/jetpack":"4.4.2",
+        "wpackagist-plugin/civicrm-wp-member-sync":"0.3.1",
         "ext-mbstring":"*",
         "ext-gd":"*"
     },
@@ -38,7 +39,12 @@
             "chmod 777 wordpress/wp-content/uploads",
             "chmod 777 wordpress/wp-content/cache",
             "chmod 755 wordpress/wp-content",
-            "chmod 777 wp-config.php"
+            "chmod 777 wp-config.php",
+            "curl -O https://download.civicrm.org/civicrm-4.7.16-wordpress.zip",
+            "unzip civicrm-4.7.16-wordpress.zip -d wordpress/wp-content/plugins",
+            "curl -O https://codeload.github.com/drastik/com.drastikbydesign.stripe/zip/4.7.1",
+            "mkdir -p wordpress/wp-content/uploads/civicrm/ext/",
+            "unzip 4.7.1 -d wordpress/wp-content/uploads/civicrm/ext/"
         ] 
     }
 
