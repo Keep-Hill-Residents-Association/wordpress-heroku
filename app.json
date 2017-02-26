@@ -52,7 +52,7 @@
   },
   "image": "heroku/php",
   "addons": [
-    "cleardb",
+    "jawsdb",
     "memcachier",
     "newrelic",
     "papertrail",
