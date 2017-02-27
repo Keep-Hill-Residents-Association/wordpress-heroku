@@ -44,7 +44,9 @@
             "unzip civicrm-4.7.16-wordpress.zip -d wordpress/wp-content/plugins",
             "curl -O https://codeload.github.com/drastik/com.drastikbydesign.stripe/zip/4.7.1",
             "mkdir -p wordpress/wp-content/uploads/civicrm/ext/",
-            "unzip 4.7.1 -d wordpress/wp-content/uploads/civicrm/ext/"
+            "unzip 4.7.1 -d wordpress/wp-content/uploads/civicrm/ext/",
+            "curl -0 https://download.civicrm.org/civicrm-4.7.16-l10n.tar.gz",
+            "tar -xvzf civicrm-4.7.16-l10n.tar.gz --directory wordpress/wp-content/plugins/civicrm/civicrm"
         ] 
     }
 
