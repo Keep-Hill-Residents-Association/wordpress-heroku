@@ -14,7 +14,7 @@
  * @package WordPress
  */
 
-$DBurl = parse_url(getenv("JAWSDB_URL"));
+$DBurl = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $DBhost = $DBurl["host"];
 $DBusername = $DBurl["user"];

@@ -47,6 +47,7 @@
             "unzip 4.7.1 -d wordpress/wp-content/uploads/civicrm/ext/",
             "curl -O https://download.civicrm.org/civicrm-4.7.16-l10n.tar.gz",
             "tar -xvzf civicrm-4.7.16-l10n.tar.gz --directory wordpress/wp-content/plugins/civicrm/civicrm"
+            "mv civicrm.settings.php wordpress/wp-content/uploads/civicrm"
         ] 
     }
 
